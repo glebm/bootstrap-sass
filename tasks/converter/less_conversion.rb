@@ -141,7 +141,7 @@ $bootstrap-sass-asset-helper: true !default;
                   else
                     '.col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i}'
                   end
-        body    = (css =~ /\$list \{\n(.*?)\n[ ]*\}/m) && $1
+        body = (css =~ /\$list \{\n(.*?)\n[ ]*\}/m) && $1
         unindent <<-SASS, 8
         // [converter] Grid converted to use SASS cycles (LESS uses recursive nested mixin defs not supported by SASS)
         #{mxn_def.strip}
