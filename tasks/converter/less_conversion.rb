@@ -359,7 +359,6 @@ $bootstrap-sass-asset-helper: true !default;
         end
       end
 
-      #require 'byebug'; byebug
       less.gsub /&:extend\((#{SELECTOR_RE}) all\)/ do
         selector = $1
         selector =~ /\.([\w-]+)/
